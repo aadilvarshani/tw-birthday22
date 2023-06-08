@@ -1,0 +1,525 @@
+/* Global Styles */
+
+#sparkles {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 9999;
+  }
+  
+  .sparkle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    background-color: #f7f7f7;
+    opacity: 0;
+    border-radius: 50%;
+    pointer-events: none;
+    animation: sparkleAnim 0.75s infinite;
+  }
+  
+  @keyframes sparkleAnim {
+    0% {
+      opacity: 0;
+      transform: translateY(0);
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(-100px);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(-200px);
+    }
+  }
+  
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+body {
+  padding: 40px;
+  background-color: #FDF4F5;
+}
+
+h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.5rem;
+  color: #ffffff;
+  border-right: solid 3px #BA90C6;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: animated-text 4s steps(29, end) 1s 1 normal both,
+             animated-cursor 600ms steps(29, end) infinite;
+  text-align: center;
+  margin: 0 auto;
+}
+
+
+/* Text animation */
+@keyframes animated-text {
+  from {
+    width: 0;
+  }
+  to {
+    width: 572px;
+  }
+}
+
+/* Cursor animation */
+@keyframes animated-cursor {
+  from {
+    border-right-color: #BA90C6;
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #FDF4F5;
+  color: #000;
+}
+
+/* Header */
+header {
+  text-align: center;
+  background-color: #E8A0BF;
+  padding: 20px;
+  color: #FFF;
+}
+
+/* Navbar */
+
+
+.navbar {
+  background-color: #BA90C6;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-brand h2 {
+  margin: 0;
+  color: #FFF;
+}
+
+.navbar-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar-menu li {
+  margin-left: 10px;
+}
+
+.navbar-menu li a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+/* Mobile Menu */
+.navbar-menu-mobile {
+  display: none;
+}
+
+.menu-icon {
+  font-size: 24px;
+  color: #FFF;
+  cursor: pointer;
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar-menu {
+    display: none;
+  }
+  
+  .navbar-menu-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #BA90C6;
+    padding: 10px;
+  }
+  
+  .menu-icon {
+    display: block;
+  }
+}
+
+
+/* Sections */
+section {
+  padding: 40px;
+}
+
+h2 {
+  color: #BA90C6;
+}
+
+/* Timeline */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #ffffff;
+}
+
+.timeline {
+  position: relative;
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 15px 0;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 2px;
+  background: #BA90C6;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -1px;
+}
+
+.container {
+  padding: 15px 30px;
+  position: relative;
+  background: inherit;
+  width: 50%;
+}
+
+.container.left {
+  left: 0;
+}
+
+.container.right {
+  left: 50%;
+}
+
+.container::after {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: calc(50% - 8px);
+  right: -8px;
+  background: #ffffff;
+  border: 2px solid #BA90C6;
+  border-radius: 16px;
+  z-index: 1;
+}
+
+.container.right::after {
+  left: -8px;
+}
+
+.container::before {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 2px;
+  top: calc(50% - 1px);
+  right: 8px;
+  background: #BA90C6;
+  z-index: 1;
+}
+
+.container.right::before {
+  left: 8px;
+}
+
+.container .date {
+  position: absolute;
+  display: inline-block;
+  top: calc(50% - 8px);
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  color: #BA90C6;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  z-index: 1;
+}
+
+.container.left .date {
+  right: -165px;
+}
+
+.container.right .date {
+  left: -165px;
+}
+
+.container .icon {
+  position: absolute;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  padding: 9px 0;
+  top: calc(50% - 20px);
+  background: #E8A0BF;
+  border: 2px solid #BA90C6;
+  border-radius: 40px;
+  text-align: center;
+  font-size: 18px;
+  color: #fff;
+  z-index: 1;
+}
+
+.container.left .icon {
+  right: 56px;
+}
+
+.container.right .icon {
+  left: 56px;
+}
+
+.container .content {
+  padding: 30px 90px 30px 30px;
+  background: #E8A0BF;
+  position: relative;
+  border-radius: 0 500px 500px 0;
+}
+
+.container.right .content {
+  padding: 30px 30px 30px 90px;
+  border-radius: 500px 0 0 500px;
+}
+
+.container .content h2 {
+  margin: 0 0 10px 0;
+  font-size: 18px;
+  font-weight: normal;
+  color: #fff;
+}
+
+.container .content p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 22px;
+  color: #000000;
+}
+
+@media (max-width: 767.98px) {
+  .timeline::after {
+    left: 90px;
+  }
+
+  .container {
+    width: 100%;
+    padding-left: 120px;
+    padding-right: 30px;
+  }
+
+  .container.right {
+    left: 0%;
+  }
+
+  .container.left::after, 
+  .container.right::after {
+    left: 82px;
+  }
+
+  .container.left::before,
+  .container.right::before {
+    left: 100px;
+    border-color: transparent #BA90C6 transparent transparent;
+  }
+
+  .container.left .date,
+  .container.right .date {
+    right: auto;
+    left: 15px;
+  }
+
+  .container.left .icon,
+  .container.right .icon {
+    right: auto;
+    left: 146px;
+  }
+
+  .container.left .content,
+  .container.right .content {
+    padding: 30px 30px 30px 90px;
+    border-radius: 500px 0 0 500px;
+  }
+}
+
+/* Love Letters */
+
+
+.love-letters-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.love-letter {
+  width: calc(50% - 15px);
+  height: 300px;
+  position: relative;
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.letter-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 80px;
+  color: #ccc;
+  background-color: #f8f8f8;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  height: 100%;
+  transition: transform 0.3s;
+}
+
+.letter-content {
+  opacity: 0;
+  transition: opacity 0.3s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #f8f8f8;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  overflow: auto;
+}
+
+.love-letter:hover {
+  transform: translateY(-10px);
+}
+
+.love-letter:hover .letter-icon {
+  transform: scale(0.9);
+}
+
+.love-letter:hover .letter-content {
+  opacity: 1;
+}
+
+@media (max-width: 767px) {
+  .love-letters-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .love-letter {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+
+
+#playlist {
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+.playlist-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 80%; /* Adjust this value to set the aspect ratio of the playlist container */
+  overflow: hidden;
+}
+
+.playlist-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+/* Photo Gallery */
+#photo-gallery {
+  text-align: center;
+  clear: both; /* Add clear property to ensure it clears the floats */
+}
+
+.photo-gallery .photo {
+  display: inline-block;
+  margin: 0 10px;
+  max-width: 300px;
+  vertical-align: top;
+  text-align: center;
+}
+
+.photo {
+  display: inline-block;
+  margin-right: 10px;
+  max-width: 300px;
+}
+
+.photo img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.photo .caption {
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Guestbook */
+.guestbook-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.guestbook-item {
+  background-color: #F8F8F8;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+}
+
+.guestbook-item h3 {
+  color: #333;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.guestbook-item .message {
+  color: #666;
+  font-size: 14px;
+}
+
+/* Surprise Section */
+#surprise {
+  background-color: #C0DBEA;
+  padding: 40px;
+  text-align: center;
+  border-radius: 10px;
+}
+

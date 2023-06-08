@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday love</title>
+  <script src="index.js"></script>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
+
+  <style>
+    /* Add your custom CSS styles here */
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Happy Birthday, <span id="changing-word">Tw✨</span></h1>
+
+    <p>A Celebration of a Beautiful Soul's Journey</p>
+  </header>
+
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <h2>Your Special Journey</h2>
+    </div>
+    <!-- <ul class="navbar-menu">
+      <li><a href="#timeline">Timeline</a></li>
+      <li><a href="#love-letters">Love Letters</a></li>
+      <li><a href="#photo-gallery">Photo Gallery</a></li>
+      <li><a href="#playlist">Playlist</a></li>
+      <li><a href="#guestbook">Guestbook</a></li>
+      <li><a href="#surprise">Surprise Element</a></li>    </ul> -->
+  </nav>
+
+  <section id="timeline">
+    <div class="timeline">
+      <div class="container left">
+        <div class="date">June 9, 2001 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+        <i class="icon fa fa-home"></i>
+        <div class="content">
+          <h2>Born to Be Adorable</h2>
+          <p>
+            You graced the world with your presence, and even as a tiny baby, your cute antics captured hearts and set the stage for a amazing life ahead.
+          </p>
+        </div>
+      </div>
+      <div class="container right">
+        <div class="date">January 18, 2001</div>
+        <i class="icon fa fa-gift"></i>
+        <div class="content">
+          <h2>Stepping into Love (and Walking Like a Genius)</h2>
+          <p>
+            Taking your first step marked the beginning of your physical independence. With your genius qualities shining through, it's only logical to assume you wowed everyone by walking with grace and brilliance.
+          </p>
+        </div>
+      </div>
+      <div class="container left">
+        <div class="date">June 1, 2006 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+        <i class="icon fa fa-user"></i>
+        <div class="content">
+          <h2>Brains and Beauty, Topped with Awesomeness</h2>
+          <p>
+            As you grew older, your intelligence shone brightly, and you topped your school, making everyone proud. It was the first glimpse of your incredible potential and the start of admiration from those around you.          </p>
+        </div>
+      </div>
+      <div class="container right">
+        <div class="date">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;May 19, 2015</div>
+        <i class="icon fa fa-running"></i>
+        <div class="content">
+          <h2>Acing Life and Topping Hearts</h2>
+          <p>
+            Once again, you topped your school, leaving everyone in awe of your brilliance. this achievement caught the eye of everyone, people couldn't help but fall for your impressive accomplishments.
+          </p>
+        </div>
+      </div>
+      <div class="container left">
+        <div class="date">May 17, 2020&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+        <i class="icon fa fa-cog"></i>
+        <div class="content">
+          <h2>From Entrepreneurship to the Stars</h2>
+          <p>
+            Embarking on a new adventure, you started your first company, blending your creativity and business acumen. Little did you know, this would be a significant turning point that would intertwine with your romantic destiny.
+          </p>
+        </div>
+      </div>
+      <div class="container right">
+        <div class="date">&nbsp;&nbsp;&nbsp;&nbsp;August 8, 2022</div>
+        <i class="icon fa fa-certificate"></i>
+        <div class="content">
+          <h2>The Triumph of Grit and Graduation Glory</h2>
+          <p>
+            After countless hours of study and relentless perseverance, the moment arrived. The culmination of your hard work and unwavering dedication shone brightly, marking a milestone in your journey of triumph.          </p>
+        </div>
+      </div>
+      <div class="container left">
+        <div class="date">December 1, 2022</div>
+        <i class="icon fa fa-cog"></i>
+        <div class="content">
+          <h2>December Job-sanity and Heartfelt Joys</h2>
+          <p>
+            December 2022 - Starting your first job was both exciting and nerve-wracking. Amid the chaos of new responsibilities, deadlines, and corporate lingo, you managed to maintain your witty charm and sense of humor, captivating not only your colleagues but also the one who had admired you from afar.
+          </p>
+        </div>
+      </div>
+      <div class="container right">
+        <div class="date">&nbsp;&nbsp;&nbsp;&nbsp;Coming Soon....</div>
+        <i class="icon fa fa-certificate"></i>
+        <div class="content">
+          <h2>A Director's Dream: Lights, Camera, Perfection!</h2>
+          <p>
+            Armed with an unwavering passion and a creative vision that knows no bounds, she takes the film industry by storm. With each project, she defies expectations and pushes the boundaries of storytelling. Her directorial genius becomes legendary, captivating hearts worldwide. Through laughter, tears, and a touch of humor, she leaves an indelible mark as the best director of her time.        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="love-letters">
+    <h2>Love Letters</h2>
+    <div class="love-letters-container">
+      <div class="love-letter">
+        <div class="letter-icon">
+          <i class="fas fa-envelope"></i>
+        </div>
+        <div class="letter-content">
+          <h3>From: Zemo</h3>
+          <p>
+            My Dearest Love,<br>
+            Happy birthday! Today is a day filled with joy and celebration as we celebrate the day you came into this world. You bring so much happiness and love into my life and I am really grateful for every moment we spend together. Your smile lights up my world, and your touch makes my heart skip a beat. today, I want to remind you of the immense love I have for you. You are my everything, and I cherish the bond we share. May your birthday be as beautiful and amazing as you are.
+          </p>
+        </div>
+      </div>
+      <div class="love-letter">
+        <div class="letter-icon">
+          <i class="fas fa-envelope"></i>
+        </div>
+        <div class="letter-content">
+          <h3>From: Zemo</h3>
+          <p>
+            To My Love,<br>
+            Today, as we celebrate the day you were born, I want to express my deepest feelings for you. You are the light that shines brightly in my life, filling each day with happiness and love. Your smile is like a gentle breeze that warms my heart, and your touch brings me confort that nothing else can. You are my anchor, my partner, and my best friend.<br>
+            <br>
+            Happy birthday, my love. May this day be filled with joy, laughter, and unforgettable moments. May all your dreams come true, and may our love continue to grow and flourish with each passing year.
+            
+            
+            
+          </p>
+        </div>
+      </div>
+      <!-- Add more love letters here -->
+    </div>
+    <div id="sparkles"></div>
+
+  </section>
+
+  <section id="photo-gallery" class="photo-gallery">
+    <h2>Photo Gallery</h2>
+    <div class="photo">
+      <img src="/images/photo11.jpeg" alt="Photo 1">
+      <div class="caption">Caption for Photo 1</div>
+    </div>
+    <div class="photo">
+      <img src="/images/photo2.jpeg" alt="Photo 1">
+      <div class="caption">Caption for Photo 1</div>
+    </div>
+    <div class="photo">
+      <img src="/images/photo3.jpeg" alt="Photo 1">
+      <div class="caption">Caption for Photo 1</div>
+    </div>
+    <div class="photo">
+      <img src="/images/photo12.jpeg" alt="Photo 1">
+      <div class="caption">Caption for Photo 1</div>
+    </div>
+    <div class="photo">
+      <img src="/images/photo6.jpeg" alt="Photo 1">
+      <div class="caption">Caption for Photo 1</div>
+    </div>
+    <div class="photo">
+      <img src="/images/photo7.jpeg" alt="Photo 1">
+      <div class="caption">Caption for Photo 1</div>
+    </div>
+    <div class="photo">
+      <img src="/images/photo8.jpeg" alt="Photo 1">
+      <div class="caption">Caption for Photo 1</div>
+    </div>
+    <div class="photo">
+      <img src="/images/photo9.jpeg" alt="Photo 1">
+      <div class="caption">Caption for Photo 1</div>
+    </div>
+    
+    <div class="photo">
+      <img src="/images/photo15.jpeg" alt="Photo 1">
+      <div class="caption">Caption for Photo 1</div>
+    </div>
+    <div class="photo">
+      <img src="/images/photo12.jpeg" alt="Photo 1">
+      <div class="caption">Caption for Photo 1</div>
+    </div>
+    <div class="photo">
+      <img src="/images/photo16.jpeg" alt="Photo 1">
+      <div class="caption">Caption for Photo 1</div>
+    </div>
+    <div class="photo">
+      <img src="/images/photo17.jpeg" alt="Photo 1">
+      <div class="caption">Caption for Photo 1</div>
+    </div>
+    <div class="photo">
+      <img src="/images/photo1.jpeg" alt="Photo 1">
+      <div class="caption">Caption for Photo 1</div>
+    </div>
+    <div class="photo">
+      <img src="/images/photo13.jpeg" alt="Photo 1">
+      <div class="caption">Caption for Photo 1</div>
+    </div>
+    <!-- Add more photos as needed -->
+  </section>
+
+  <section id="playlist">
+    <h2>Playlist</h2>
+    <div class="playlist-container">
+      <iframe src="https://open.spotify.com/embed/playlist/6DftGTIwfW4K1vEDWe4pjb?si=srspmQLMQMW5k7k6yZ9vkQ" width="100%" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+    </div>
+  </section>
+  
+  
+
+  <section id="guestbook">
+    <h2>Guestbook</h2>
+    <div class="guestbook-container">
+      <div class="guestbook-item">
+        <h3>Kashish</h3>
+        <div class="message">Happiest Birthday Babygirl 💛
+          Your heart and energy is like no other one and I am so lucky to have you. You are sunshine of my life. I love you always no matter what🫂 So so proud of you every single day girl💕 Thank you for always taking care of me and for loving me. Have a beautiful day and year ahead my bitch💋</div>
+      </div>
+      <div class="guestbook-item">
+        <h3>Shreyash</h3>
+        <div class="message">Happy birthday to my litrally literary enthusiast friend! Enjoy a day filled with books, writing, and endless inspiration! 🎉📚✍️</div>
+      </div>
+      <div class="guestbook-item">
+        <h3>Mrunali</h3>
+        <div class="message">Hey, I miss you so much Bhai. Bhagwan kare tera janam din bada sukhad jaye. Aur teko maloom na Mai teko bohot bohot yaad krti chips khate waqt 😅. Hamesha hamesha hasti khelti kudti reh bas kudte kudte girna mat. Love you so much 💗</div>
+      </div>
+      <div class="guestbook-item">
+        <h3>Khush</h3>
+        <div class="message">Hey gem, Happy Birthday...i just wanted to say thatt I'm glad that i have a sister like you...and ik I'm annoying but...its fun to annoy you...i thought that I'll sleep in peace in my own room ....but i miss you man 😭😭...i miss kicking you at night 😭....yeaaaaa you got successful at 21 ...can someone believe thattt????...goddam amazing you are bro 🤸... I'm so proud of you ...yeaaaaa Happy Birthday amazing sister , amazing daughter, amazing girlfriend, amazing employee and a amazing human 😂...bye bye 😽
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="surprise">
+    <h2>Happy Birthday!</h2>
+    <p>Wishing you a Happy and Amazing year ahead!</p>
+  </section>
+
+  <script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+      const canvas = document.createElement('canvas');
+      document.body.appendChild(canvas);
+      canvas.style.position = 'fixed';
+      canvas.style.pointerEvents = 'none';
+      canvas.style.top = '0';
+      canvas.style.left = '0';
+      canvas.style.width = '100%';
+      canvas.style.height = '100%';
+
+      const context = canvas.getContext('2d');
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+
+      function confettiBurst() {
+        canvas.style.display = 'block';
+        canvas.style.zIndex = '9999';
+
+        const duration = 5 * 1000;
+        const animationEnd = Date.now() + duration;
+        const defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 0 };
+
+        function randomInRange(min, max) {
+          return Math.random() * (max - min) + min;
+        }
+
+        const interval = setInterval(function () {
+          const timeLeft = animationEnd - Date.now();
+
+          if (timeLeft <= 0) {
+            return clearInterval(interval);
+          }
+
+          const particleCount = 50 * (timeLeft / duration);
+          // since particles fall down, start a bit higher than random
+          const angle = Math.random() * 360;
+          const velocity = randomInRange(defaults.startVelocity - 3, defaults.startVelocity + 3);
+          new confetti.Context(context).spawn({
+            particleCount,
+            angle,
+            spread: (360 * Math.random() - 180) + defaults.spread,
+            startVelocity: (60 * Math.random() - 30) + velocity,
+            ticks: defaults.ticks,
+            origin: { x: Math.random(), y: Math.random() - 0.2 },
+            colors: ['#a864fd', '#29cdff', '#78ff44', '#ff718d', '#fdff6a']
+          });
+        }, 250);
+      }
+
+      document.getElementById('surprise').addEventListener('click', function () {
+        confettiBurst();
+      });
+    });
+  </script>
+</body>
+
+</html>
